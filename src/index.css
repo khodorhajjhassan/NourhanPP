@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #797979;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fe5239;
+  transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+
+@font-face {
+  font-family: Hyperion;
+  src: url(../public/Hyperion-Regular.ttf);
+  font-display: swap;
+}
+
+.hyperion {
+  font-family: Hyperion;
+}
+
+h2 {
+  font-family: Hyperion;
+  font-size: 3rem; 
+  line-height: 1.2;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1; /* Ensure visibility */
+  opacity: 1; /* Ensure full visibility */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #fe5239; /* Change arrow icon color */
+  font-size: 20px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #fe5239;
+}
+
+.swal2-confirm {
+  background: #fe5239 !important;
+}
+.swal2-icon-content {
+  font-size: 2rem !important;
+}
+.swal2-icon {
+  color: #fe5239 !important;
+  border: 0.15rem solid #fe5239 !important;
+  width: 2rem !important;
+  height: 2rem !important;
+}
+
+.swal2-title {
+  padding: 0 !important;
+}
